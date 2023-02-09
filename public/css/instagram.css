@@ -1,0 +1,316 @@
+body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  #container {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 54px;
+  }
+  .barra-superior {
+    background-color: #ffffff;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px #dbdbdb solid;
+    z-index: 1;
+  }
+  .simbolo {
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .option {
+    display: flex;
+    justify-content: space-between;
+  }
+  .reaction {
+    display: flex;
+    justify-content: flex-end;
+    width: 70px;
+    margin: 13px 17px 0px 17px;
+  }
+  .barra-superior img {
+    width: 103px;
+    height: 29px;
+    border-left: 1px #dbdbdb solid;
+    padding-left: 12px;
+  }
+  .logotipo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 160px;
+  }
+  input {
+    background-color: #fafafa;
+    border: 1px #dbdbdb solid;
+    text-align: center;
+    color: #979797;
+    width: 215px;
+    height: 28px;
+  }
+  input:focus{
+    border: none;
+  }
+  ion-icon {
+    width: 25px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    border-width: 2px #000000 solid;
+  }
+  .barra-e-stories {
+    display: flex;
+    margin-top: 30px;
+    margin-right: 300px;
+    flex-direction: column;
+  }
+  .caixa-de-stories {
+    width: 614px;
+    height: 118px;
+    padding-left: 18px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px #dbdbdb solid;
+    overflow: hidden;
+  }
+  .caixa-de-stories div {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  }
+  .fundo {
+    width: 66px;
+    height: 66px;
+    margin: 23px 7px 1px 7px;
+    border-radius: 33px;
+  }
+  .seta {
+    width: 26px;
+    height: 26px;
+    margin: 46px 16px 46px 560px;
+    position: absolute;
+    top: 134;
+  }
+  .seta ion-icon {
+    width: 26px;
+    height: 26px;
+    color: #ffffff;
+    border-radius: 100%;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  ion-icon:hover {
+    cursor: pointer;
+  }
+  .foto-de-perfil {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    margin: 28px 12px 39px 12px;
+    position: absolute;
+    top: 111;
+  }
+  .postagens {
+    height: 200vh;
+   
+  }
+  .instagram {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .usuario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 293px;
+    height: 118px;
+  }
+  .username {
+    color: #262626;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .nome {
+    color: #8e8e8e;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  
+  .meu-perfil {
+    display: flex;
+    width: 73px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sugestoes {
+    display: flex; 
+    
+    justify-content: space-between;
+    width: 300px;
+    height: 15px;
+  }
+  .sugerido {
+    font-weight: 500;
+    color: #8e8e8e;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .ver-tudo {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .recomendado {
+    display: flex;
+  }
+  .autor {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 17px;
+  }
+  .indicacao {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 17px 11px;
+  }
+  .figurante {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 11px;
+  }
+  .azul {
+    color: #139ef2;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+  }
+  .aviso-legal {
+    width: 300px;
+    font-weight: 400;
+    font-size: 11px;
+    color: #c7c7c7;
+    margin-top: 33px;
+  }
+  .aviso-legal p {
+    margin-bottom: 18px;
+  }
+  .segue-vc {
+    margin-left: 30px;
+    position: fixed;
+    top: 111;
+    right: 300px;
+  }
+  .feed {
+    width: 614px;
+    height: 900px;
+    margin-bottom: 60px;
+    margin-top: 24px;
+  
+    border: 1px #dbdbdb solid;
+  }
+  .post {
+    width: 612px;
+    height: 612px;
+    margin-top: 14px;
+  }
+  .quem-curtiu {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 17px;
+  }
+  .curtido {
+    width: 614px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 14px 17px;
+  }
+  .caixa-de-comentarios {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 17px;
+  }
+  .comment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .like {
+    height: 9px;
+    width: 9px;
+  }
+  .adicione-comentario {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dbdbdb;
+  }
+  .adicione-comentario input {
+    background-color: #ffffff;
+    width: 100%;
+    border: none;
+    text-align: left;
+  }
+  button {
+    background-color: #ffffff;
+    color: #b2dffc;
+    border: none;
+  }
+  button:hover {
+    cursor: pointer;
+    color: #0095f6;
+    transition: 300ms;
+  }
+  .like:hover {
+    color: red;
+  }
+  .caixa-de-comentarios p {
+    font-size: 14px;
+  }
+  .curtido p {
+    font-weight: 300;
+    height: 21px;
+    line-height: 17px;
+    margin: 2px;
+  }
+  span {
+    font-style: bold;
+    margin: 0 2px;
+  }
+  .azul,
+  img,
+  span,
+  p:hover {
+    cursor: pointer;
+  }
+  .curtido p,
+  .post:hover {
+    cursor: default;
+  }
+  
