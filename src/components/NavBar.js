@@ -2,7 +2,7 @@ export default function NavBar(){
     return (
         <div class="barra-superior">
         <div class="logotipo">
-            <ion-icon name="logo-assets"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
             <img src="./assets/logo.png" />
         </div>
         

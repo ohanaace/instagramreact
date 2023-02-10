@@ -162,6 +162,10 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+  .informacao{
+    display: flex;
+    align-items: center;
+  }
   .sugestoes {
     display: flex; 
     
