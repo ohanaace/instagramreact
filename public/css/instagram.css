@@ -126,14 +126,11 @@ body {
     position: absolute;
     top: 111;
   }
-  .postagens {
-    height: 200vh;
-   
-  }
   .instagram {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height: 200vh;
   }
   
   .usuario {
