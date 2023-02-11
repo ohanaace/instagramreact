@@ -5,19 +5,19 @@ export default function Sugestoes(){
 
 return (
 <div>
-    <div class="sugestoes">
+    <div className="sugestoes">
  
-        <p class="sugerido">Sugestões para você</p>
-        <p class="ver-tudo">Ver tudo</p>
+        <p className="sugerido">Sugestões para você</p>
+        <p className="ver-tudo">Ver tudo</p>
       </div>
-      {sugeridos.map((p) => <Sugestao nome = {p.nome} foto = {p.foto} info = {p.info} seguir = {p.seguir} />)}
+      {sugeridos.map((p) => <Sugestao nome = {p.nome} foto = {p.foto} info = {p.info} seguir = {p.seguir} key={p.nome} />)}
 
-          <div class="aviso-legal">
+          <div className="aviso-legal">
             <p>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
               Termos • Localizações • Contas mais relevantes • Hashtags • 
               Idioma</p>
            <p>© 2021 INSTAGRAM DO FACEBOOK</p>
           </div>
-</div>)
+</div>);
 }
 

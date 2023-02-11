@@ -5,19 +5,19 @@ import Stories from "./Stories";
 
 export default function Corpo(){
     return (
-<div>
+<>
     
         <NavBar />
       
-    <div class="barra-e-stories">
+    <div className="barra-e-stories">
         
         <Stories/>
         <Posts/>
     
-      <div class="segue-vc">
+      <div className="segue-vc">
         <Sidebar/>
         </div>
     </div>
-</div>
-    )
+</>
+    );
 }

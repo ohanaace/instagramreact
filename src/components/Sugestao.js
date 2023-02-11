@@ -1,18 +1,19 @@
 export default function Sugestao(props){
-    return (<div class="indicacao">
-      <div class="recomendado">
+    return (
+    <div className="indicacao">
+      <div className="recomendado">
         <img
           src={props.foto}
-          class="figurante"
+          className="figurante"
           alt={props.nome}
         />
-        <div class="info">
-          <p class="username">{props.nome}</p>
-          <p class="nome">{props.info}</p>
+        <div className="info">
+          <p className="username">{props.nome}</p>
+          <p className="nome">{props.info}</p>
         </div>
       </div>
-      <div class="azul">
+      <div className="azul">
         {props.seguir}
       </div>
-    </div>)
+    </div>);
     }

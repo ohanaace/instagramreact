@@ -7,4 +7,4 @@ export const users = [
     {nome: "Mãozinha", foto: "./assets/Mãozinha.jpg", borda:"./assets/stories_background.jpg"},
     {nome: "Bianca", foto: "./assets/Bianca.jpg", borda:"./assets/stories_background.jpg"},
     {nome: "Thornhill", foto: "./assets/Thornhill.jpg", borda:"./assets/stories_background.jpg"}
-]
+];

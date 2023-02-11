@@ -16,20 +16,20 @@ export default function  Usuario(){
     setProfile(novoProfile);
   }
     return (
-    <div class="usuario">
-        <div class="meu-perfil">
+    <div className="usuario">
+        <div className="meu-perfil">
           <img
-            class="foto-de-perfil"
+            className="foto-de-perfil"
             src={profile}
             onClick={mudarProfile}
             data-test="profile-image"/>
           
         </div>
     
-        <div class="informacao">
-          <p class="username" data-test="name" >{logIn} </p>
+        <div className="informacao">
+          <p className="username" data-test="name" >{logIn} </p>
           <ion-icon name="pencil" onClick={logar} data-test="edit-name" ></ion-icon>
         </div>
     </div>
-    )
+    );
 }

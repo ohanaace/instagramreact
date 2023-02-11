@@ -4,7 +4,7 @@ import Post from "./Post";
 export default function Posts(){  
   return (
 
-<div class="instagram">
+<div className="instagram">
       {postagem.map((p) => <Post autor = {p.autor}
       fotoDePerfil = {p.fotoDePerfil}
       foto = {p.foto}
@@ -15,10 +15,11 @@ export default function Posts(){
       quantosComentarios = {p.quantosComentarios}
       quemComentou = {p.quemComentou}
       comentario = {p.comentario}
+      key = {p.autor}
       />)}
 
 
     </div>
-    )
+    );
 }
 

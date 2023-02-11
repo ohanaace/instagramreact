@@ -31,4 +31,4 @@ export   const postagem = [
     quantosComentarios: "Ver todos os 9.804 comentários",
     quemComentou: "Enid",
     comentario: "Nossa, vcs duas são igualzinhas..."}
-  ]
+  ];
