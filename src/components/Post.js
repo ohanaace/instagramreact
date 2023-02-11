@@ -4,6 +4,7 @@ export default function Post(props){
   const padraoLike = <ion-icon name="heart-outline"></ion-icon>;
   const [like, setLike] = useState(padraoLike);
   const [heart, setHeart] = useState(false);
+  const [fans, setFans] = useState(props.quantosCurtiram)
   const padraoSave = <ion-icon name="bookmark-outline"></ion-icon>;
   const [save, setSave] = useState(padraoSave);
   const [mark, setMark] = useState(false);
@@ -12,11 +13,22 @@ export default function Post(props){
     if(heart === true){
       setHeart(false);
       setLike(padraoLike);
+      setFans(props.quantosCurtiram);
       return;
     }
    const curtiu = <ion-icon name="heart"></ion-icon>;
    setLike(curtiu);
+   setFans(fans + 1);
    setHeart(true);
+  }
+  function curtirPelaFoto(){
+    if(heart === true) {
+      return;
+    }
+    const curtiu = <ion-icon name="heart"></ion-icon>;
+    setLike(curtiu);
+    setFans(fans + 1);
+    setHeart(true);
   }
   function salvar(){
     if(mark === true) {
@@ -41,7 +53,7 @@ export default function Post(props){
           <ion-icon name="ellipsis-horizontal"></ion-icon>
         </div>
       </div>
-      <img src={props.foto} className="post" data-test="post-image"/>
+      <img src={props.foto} onDoubleClick={curtirPelaFoto} className="post" data-test="post-image"/>
       <div className="option">
         <div className="reaction">
           <div onClick={curtir} className = {!heart? "" : "vermelho"} data-test="like-post">
@@ -57,7 +69,7 @@ export default function Post(props){
       <div className="curtido">
         <img className="quem-curtiu" src={props.quemCurtiuFoto} alt= {props.quemCurtiu} />
         <p>
-          Curtido por <span className="username">{props.quemCurtiu}</span>e <span className="username" data-test="likes-number">outras {props.quantosCurtiram} pessoas</span>
+          Curtido por <span className="username">{props.quemCurtiu}</span>e <span className="username" data-test="likes-number">outras {fans} pessoas</span>
         </p>
       </div>
       <div className="caixa-de-comentarios">
